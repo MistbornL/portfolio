@@ -1,6 +1,6 @@
 import { Transition } from "framer-motion";
 
-export const textVariant = (delay: number): Transition => {
+export const textVariant = (delay: any) => {
   return {
     hidden: {
       y: -50,
@@ -19,11 +19,11 @@ export const textVariant = (delay: number): Transition => {
 };
 
 export const fadeIn = (
-  direction: "left" | "right" | "up" | "down",
-  type: Transition["type"],
-  delay: number,
-  duration: number
-): Transition => {
+  direction: any,
+  type: any,
+  delay: any,
+  duration: any
+) => {
   return {
     hidden: {
       x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
@@ -44,7 +44,7 @@ export const fadeIn = (
   };
 };
 
-export const zoomIn = (delay: number, duration: number): Transition => {
+export const zoomIn = (delay: any, duration: any) => {
   return {
     hidden: {
       scale: 0,
@@ -64,11 +64,11 @@ export const zoomIn = (delay: number, duration: number): Transition => {
 };
 
 export const slideIn = (
-  direction: "left" | "right" | "up" | "down",
-  type: Transition["type"],
-  delay: number,
-  duration: number
-): Transition => {
+  direction: any,
+  type: any,
+  delay: any,
+  duration: any
+) => {
   return {
     hidden: {
       x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
@@ -87,10 +87,7 @@ export const slideIn = (
   };
 };
 
-export const staggerContainer = (
-  staggerChildren: number,
-  delayChildren?: number
-): Transition => {
+export const staggerContainer = (staggerChildren: any, delayChildren: any) => {
   return {
     hidden: {},
     show: {

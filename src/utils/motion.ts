@@ -1,5 +1,3 @@
-import { Transition } from "framer-motion";
-
 export const textVariant = (delay: any) => {
   return {
     hidden: {

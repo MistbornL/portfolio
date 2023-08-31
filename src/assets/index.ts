@@ -26,11 +26,13 @@ import scandiweb from "./company/scandiweb.png";
 import mima from "./company/mima.jpeg";
 import itransition from "./company/itransition.jpeg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import metaverse from "./metaverse.png";
+import d2g from "./d2g.png";
+import traiding from "./traiding.png";
+import toe from "./toe.png";
 
 export {
+  toe,
   logo,
   backend,
   creator,
@@ -41,6 +43,7 @@ export {
   close,
   css,
   docker,
+  d2g,
   figma,
   git,
   html,
@@ -56,7 +59,6 @@ export {
   scandiweb,
   mima,
   itransition,
-  carrent,
-  jobit,
-  tripguide,
+  metaverse,
+  traiding,
 };

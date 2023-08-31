@@ -30,7 +30,6 @@ const Ball = (props: any) => {
           rotation={[2 * Math.PI, 0, 6.25]}
           scale={1}
           map={decal}
-          flatShading
         />
       </mesh>
     </Float>
@@ -43,6 +42,7 @@ type BallCanvasProps = {
 const BallCanvas: React.FC<BallCanvasProps> = ({ icon }) => {
   return (
     <Canvas
+      className="cursor-pointer"
       frameloop="demand"
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}

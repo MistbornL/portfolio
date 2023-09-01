@@ -1,25 +1,34 @@
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import { styles } from "../style";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
-const Contact = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState({
+type FormState = {
+  name: string;
+  email: string;
+  message: string;
+};
+
+const Contact: React.FC = () => {
+  const formRef = useRef<HTMLFormElement | null>(null);
+  const [form, setForm] = useState<FormState>({
     name: "",
     email: "",
     message: "",
   });
 
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState<boolean>(false);
 
-  const handleChange = (e: any) => {
-    const { target } = e;
-    const { name, value } = target;
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
 
     setForm({
       ...form,
@@ -27,12 +36,12 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .send(
+    try {
+      const response: any = await emailjs.send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
@@ -43,25 +52,25 @@ const Contact = () => {
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
-        }
       );
+
+      setLoading(false);
+
+      if (response.status === 200) {
+        toast.success("Thank you. I will get back to you as soon as possible.");
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+      } else {
+        throw new Error("Ahh, something went wrong. Please try again.");
+      }
+    } catch (error) {
+      setLoading(false);
+      console.error(error);
+      toast.error("Ahh, something went wrong. Please try again.");
+    }
   };
 
   return (
@@ -122,13 +131,13 @@ const Contact = () => {
           </button>
         </form>
       </motion.div>
-
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
         <EarthCanvas />
       </motion.div>
+      <ToastContainer className="mt-20" />
     </div>
   );
 };

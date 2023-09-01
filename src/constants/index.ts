@@ -47,7 +47,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React Developer",
     icon: mobile,
   },
   {
@@ -173,27 +173,12 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "It's honestly hard to explain how integral you are to this team  #TeamPlayer",
+    name: "Giga Paitchadze",
+    designation: "IT Project Manager",
+    company: "Fintech",
+    image:
+      "https://media.licdn.com/dms/image/D4D03AQGEpfJA0tIltg/profile-displayphoto-shrink_200_200/0/1688672129694?e=1698883200&v=beta&t=ankkmXyDethgPXPAncFKOH2tRkLC61jEEkbw_6J7R-4",
   },
 ];
 
@@ -234,7 +219,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],

@@ -13,6 +13,7 @@ import {
   nodejs,
   mongodb,
   git,
+  social,
   figma,
   docker,
   aqtra,
@@ -134,7 +135,7 @@ const experiences = [
     company_name: "Itransition Group",
     icon: itransition,
     iconBg: "#E6DEDD",
-    date: "Mayy 2022 - Sep 2022",
+    date: "May 2022 - Sep 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -264,6 +265,27 @@ const projects = [
     ],
     image: d2g,
     source_code_link: "https://github.com/MistbornL/broproj",
+  },
+  {
+    name: "Misty",
+    description:
+      "At Misty, I'm redefining the way people connect and share moments with each other. my platform is a vibrant community where users from all over the world come together to capture, express, and explore life's beautiful moments. With ongoing development and innovation, we're committed to making your social networking experience better every day. Join us, and let's write the next chapter together.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: social,
+    source_code_link: "https://github.com/MistbornL/social-app",
   },
 ];
 

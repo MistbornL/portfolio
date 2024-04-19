@@ -207,7 +207,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: metaverse,
+    image: "",
     source_code_link: "https://verde.ge",
   },
   {

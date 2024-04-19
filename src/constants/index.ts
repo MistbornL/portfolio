@@ -25,6 +25,7 @@ import {
   scandiweb,
   itransition,
   toe,
+  skybound,
 } from "../assets";
 
 export const navLinks = [
@@ -184,6 +185,56 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Verde",
+    description:
+      "Verde is an innovative project designed to bring nature and sustainability to the forefront of urban living. By combining modern technology with a deep commitment to environmental consciousness, Verde aims to create a greener and healthier lifestyle for individuals and communities.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "e-commerce",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Shadcn",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: metaverse,
+    source_code_link: "https://verde.ge",
+  },
+  {
+    name: "Skybound",
+    description:
+      "Skybound is a traveling representative project for those who love new experiences and adventures",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "motion",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Shadcn",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: skybound,
+    source_code_link: "https://skybound.ge",
+  },
   {
     name: "Metaverse",
     description:

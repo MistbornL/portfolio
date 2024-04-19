@@ -25,7 +25,7 @@ import aqtra from "./company/aqtra.png";
 import scandiweb from "./company/scandiweb.png";
 import mima from "./company/mima.jpeg";
 import itransition from "./company/itransition.jpeg";
-
+import skybound from "./skybound.png";
 import metaverse from "./metaverse.png";
 import d2g from "./d2g.png";
 import traiding from "./traiding.png";
@@ -33,6 +33,7 @@ import toe from "./toe.png";
 
 export {
   toe,
+  skybound,
   logo,
   backend,
   creator,

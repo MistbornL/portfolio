@@ -26,6 +26,7 @@ import {
   itransition,
   toe,
   skybound,
+  verde,
 } from "../assets";
 
 export const navLinks = [
@@ -207,7 +208,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "",
+    image: verde,
     source_code_link: "https://verde.ge",
   },
   {

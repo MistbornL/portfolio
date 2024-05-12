@@ -35,7 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt className="cursor-pointer bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+      <Tilt className="cursor-pointer bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-full flex flex-col justify-between">
         <div
           onClick={() => window.open(source_code_link, "_blank")}
           className="relative w-full h-[230px]"
@@ -57,7 +57,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
         </div>
 
-        <div className="mt-5 max-h-48 overflow-y-scroll ">
+        <div className="mt-5 max-h-48 overflow-y-scroll">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>

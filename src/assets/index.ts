@@ -20,7 +20,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
+import verde from "../assets/verde.png";
 import aqtra from "./company/aqtra.png";
 import scandiweb from "./company/scandiweb.png";
 import mima from "./company/mima.jpeg";
@@ -32,6 +32,7 @@ import traiding from "./traiding.png";
 import toe from "./toe.png";
 
 export {
+  verde,
   toe,
   skybound,
   logo,

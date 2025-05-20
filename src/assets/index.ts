@@ -30,6 +30,7 @@ import metaverse from "./metaverse.png";
 import d2g from "./d2g.png";
 import traiding from "./traiding.png";
 import toe from "./toe.png";
+import tfh from "./tfh.jpeg";
 
 export {
   verde,
@@ -64,4 +65,5 @@ export {
   itransition,
   metaverse,
   traiding,
+  tfh,
 };

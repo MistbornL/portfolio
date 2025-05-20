@@ -27,6 +27,7 @@ import {
   toe,
   skybound,
   verde,
+  tfh,
 } from "../assets";
 
 export const navLinks = [
@@ -169,6 +170,18 @@ const experiences = [
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Retool JS developer",
+    company_name: "Tools For Humanity",
+    icon: tfh,
+    iconBg: "#383E56",
+    date: "Jan 2024 - Present",
+    points: [
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Built and maintained complex Retool apps with custom JavaScript logic, dynamic queries, and API integrations to support fraud prevention, compliance, and user verification systems.",
+      "Ensured data accuracy and integrity across tools by integrating validation rules, real-time error handling, and logging mechanisms.",
     ],
   },
 ];
